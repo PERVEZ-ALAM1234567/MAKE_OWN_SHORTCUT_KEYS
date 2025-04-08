@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Keyboard Shortcuts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="shortcut-manager">
+    <h1>Custom Keyboard Shortcuts</h1>
+    <div class="shortcut-form">
+      <label for="action-select">Select Action:</label>
+      <select id="action-select">
+        <option value="show-alert">Show Alert</option>
+        <option value="change-color">Change Background Color</option>
+        <option value="log-message">Log Message</option>
+      </select>
+      <label for="shortcut-input">Define Shortcut:</label>
+      <input type="text" id="shortcut-input" placeholder="e.g., Ctrl+Shift+A">
+      <button id="add-shortcut-btn">Add Shortcut</button>
+    </div>
+    <div class="shortcut-list">
+      <h2>Defined Shortcuts</h2>
+      <ul id="shortcut-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
